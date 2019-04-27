@@ -1,9 +1,13 @@
+/*Global*/
+
 body {
   background-color: #000;
   font-family: sans-serif helvetica;
 }
 
 * {box-sizing:border-box}
+
+/*navbar*/
 
 #signbutton{
   background: red;
@@ -14,14 +18,16 @@ body {
 }
 
 .logo{
-  background-image: url(../images/logo.jpg);
+  background-image: url(../images/logo1.png);
   background-position:center;
   background-size: cover;
   background-repeat: no-repeat;
   display: inline-block;
   float: left;
-  padding: 20px;
+  padding: 30px;
 }
+
+/*landing page description*/
 
 #largeImage{
   background: black;
@@ -48,10 +54,12 @@ body {
   opacity:0.8;
 }
 
+/*movies and programmes section*/
+
 #videoSection{
   border-bottom: 5px grey solid;
   width: 100%;
-  height: 120vh;
+  height: 140vh;
   border-top: 5px grey solid;
   padding-top: 100px;
 }
@@ -68,15 +76,29 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   border-bottom: 5px grey solid;
+  padding-left: 40px;
 }
 
 #tvbox{
   padding-top: 100px;
 }
 
+#tvimage{
+  background-image: url(../images/logo1.png);
+  background-position:center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#tvimage2{
+  background-image: url(../images/logo1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 #tvimage img{
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 #tv h1 {
@@ -84,8 +106,9 @@ body {
   font-size: 60px;
 }
 
-#tv h4 {
+#tv h4,h1 {
   color: white;
+  margin-bottom: 15px;
 }
 
 .button2{
@@ -99,16 +122,33 @@ body {
   border-top: 5px grey solid;
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-left: 40px;
+}
+
+#watch h4,h1 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+#watch h1{
+  font-size: 50px;
 }
 
 #download{
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-right: 40px;
+
 }
 
-#faq{
-  border-bottom: 5px grey solid;
-  border-top: 5px grey solid;
+#download h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+#download h1{
+  font-size: 45px;
+  margin-bottom: 15px;
 }
 
 /*slideshow movies*/
@@ -125,9 +165,10 @@ body {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -42px;
   padding: 16px;
   color: white;
+  background: #000;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -143,18 +184,19 @@ body {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #fff;
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  position: relative;
   width: 100%;
   text-align: center;
+  text-decoration: underline red;
 }
 
 /* Number text (1/3 etc) */
@@ -201,3 +243,72 @@ body {
   to {opacity: 1}
 }
 
+/*FAQ*/
+
+#faq{
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 100px;
+  border-bottom: 5px grey solid;
+  border-top: 5px grey solid;
+}
+
+.questions{
+  margin-bottom: 20px;
+}
+
+
+dl.faq button {
+  margin: 0;
+  padding: 0;
+  margin-top: 1em;
+  background-color: transparent;
+  padding-left: 0.125em;
+  background: #303030;
+  color: white;
+  font-size: 30px;
+}
+
+dl dd {
+  margin: 0;
+  padding: 0;
+  margin-left: 1.5em;
+}
+
+dl.faq .desc {
+  margin: 0;
+  padding: 0.5em;
+  font-size: 110%;
+  display: none;
+  background-color: #303030;
+  color: #fff;
+  border-top: 1px black solid;
+}
+
+dl.faq button:hover,
+dl.faq button:focus {
+  font-size: bold;
+}
+
+dl.faq button:focus {
+  font-size: bold;
+}
+
+dl.faq button:hover {
+  font-size: bold;
+}
+
+dl.faq button:active {
+  background-color: #303030;
+}
+
+dl.faq button[aria-expanded="false"]::before {
+  content: url('../images/right-arrow-brown.png');
+  padding-right: 0.35em;
+}
+
+dl.faq button[aria-expanded="true"]::before {
+  content: url('../images/down-arrow-brown.png');
+  padding-right: 0.35em;
+}
