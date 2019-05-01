@@ -12,18 +12,21 @@ body {
 #signbutton{
   background: red;
   color: white;
+}
+
+#buttondiv{
   position: absolute;
   right: 0;
-  margin-right: 50px;
+  margin: 30px;
 }
 
 .logo{
-  display: inline-block;
-  float: left;
-}
-
-.logo img{
+  background-image: url(../images/logo1.png);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 200px;
+  height: 100px;
 }
 
 /*landing page description*/
@@ -33,20 +36,21 @@ body {
   width: 100%;
   height: 100vh;
 }
-.description-box{
-  color: white;
-  padding-top: 200px;
+
+#largeImage h1{
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.description-box h1{
-  font-size: 60px;
-  font-weight: bolder;
+.description-box{
+  color: white;
+  padding-top: 100px;
 }
 
 .button1{
   background: red;
   color: white;
-  font-size: 200%;
+  font-size: 17px;
 }
 
 .button1:hover{
@@ -58,7 +62,7 @@ body {
 #videoSection{
   border-bottom: 5px grey solid;
   width: 100%;
-  height: 140vh;
+  height: 100vh;
   border-top: 5px grey solid;
   padding-top: 100px;
 }
@@ -66,20 +70,25 @@ body {
 #videoSection h2{
   color: white;
   text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
 }
 
 /*window sections*/
 
 #tv{
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  height: 110vh;
   border-bottom: 5px grey solid;
-  padding-left: 40px;
+  padding-top: 100px;
 }
 
 #tvbox{
-  padding-top: 100px;
+
+}
+
+#tvbox1{
+  margin-top: 10px;
 }
 
 #tvimage{
@@ -87,26 +96,24 @@ body {
   background-position:center;
   background-size: contain;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 #tvimage2{
   background-image: url(../images/logo1.png);
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-#tvimage2 img{
-  width: 100%;
+  margin-top: 10px;
 }
 
 #tvimage img{
   width: 100%;
-  height: 500px;
 }
 
 #tv h1 {
   color: white;
-  font-size: 60px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 #tv h4,h1 {
@@ -118,14 +125,14 @@ body {
   border: 1px white solid;
   color: white;
   background: black;
-  font-size: 150%;
+  font-size: 17px;
 }
 
 #watch{
   border-top: 5px grey solid;
   padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 40px;
+  width: 100%;
+  height: 110vh;
 }
 
 #watch h4,h1 {
@@ -134,14 +141,14 @@ body {
 }
 
 #watch h1{
-  font-size: 50px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 #download{
+  width: 100%;
+  height: 110vh;
   padding-top: 100px;
-  padding-bottom: 100px;
-  padding-right: 40px;
-
 }
 
 #download h4 {
@@ -150,14 +157,15 @@ body {
 }
 
 #download h1{
-  font-size: 45px;
+  font-size: 30px;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 /*slideshow movies*/
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1200px;
   position: relative;
   margin: auto;
 }
@@ -249,16 +257,28 @@ body {
 /*FAQ*/
 
 #faq{
-  padding-top: 100px;
-  padding-left: 130px;
-  padding-right: 130px;
-  padding-bottom: 100px;
   border-bottom: 5px grey solid;
   border-top: 5px grey solid;
+  width: 100%;
+  height: 180vh;
+  padding-top: 100px;
+}
+
+#faq1_desc, #faq2_desc, #faq3_desc, #faq4_desc, #faq5_desc, #faq6_desc{
+  margin-right: 20px;
+}
+
+.faq{
+  margin-bottom: 100px;
+}
+
+#faq h1{
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .questions{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 
@@ -270,7 +290,7 @@ dl.faq button {
   padding-left: 0.125em;
   background: #303030;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 dl dd {
@@ -335,78 +355,6 @@ footer{
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #largeImage h3, .button1{
-    font-size: 120%;
-  }
-  #largeImage{
-    height: 100vh;
-    margin-top: -100px;
-
-  }
-  #largeImage h1{
-    font-size: 30px;
-    font-weight: bold;
-  }
-  .logo img{
-    width: 150px;
-  }
-  #videoSection h2{
-    font-size: 120%;
-  }
-  #videoSection img{
-    width: 100%;
-  }
-
-  #videoSection{
-    height: 100vh;
-  }
-  #tvimage1 img{
-    width: 100%;
-  }
-  #tvimage img{
-    width: 250px;
-    height: 250px;
-  }
-  #tv{
-    padding: 0;
-    height: 100vh;
-  }
-  #download{
-    padding:0;
-    height: 100vh;
-    margin-bottom: 20px;
-  }
-  #download h1{
-    font-weight: bold;
-  }
-  #watch{
-    padding: 0;
-    height: 100vh;
-    margin-bottom: 20px;
-  }
-  #tv, #download, #watch, h4, .button2 {
-    font-size: 110%;
-    text-align: center;
-  }
-  #tv h1{
-    font-size: 40px;
-  }
-  #download h1{
-    font-size: 30px;
-  }
-  #watch h1{
-    font-size: 40px;
-  }
-  #faq{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  #faq1_desc, #faq2_desc, #faq3_desc, #faq4_desc, #faq5_desc, #faq6_desc{
-    font-size: 20px;
-    margin-right: 15px;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -418,26 +366,42 @@ footer{
     font-size: 20px;
     margin-right: 20px;
   }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  #videoSection img{
-    width: 100%;
+  #videoSection{
+    height: 140vh;
+  }
+  #tv, #download, #watch{
+    height: 110vh;
+    padding-top: 100px;
+  }
+  #tvbox{
+    text-align: left;
+    margin-top: 100px;
+  }
+  #tvbox1{
+    text-align: left;
+    margin-top: 100px;
+  }
+  #faq{
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  #videoSection img{
-    width: 100%;
+@media only screen and (min-width: 1400px) {
+  #faq{
+    height: 110vh;
+  }
+  #tvimage2{
+    background-image: url(../images/logo1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #tvimage2 img{
+    width: 120%;
+  }
+  #tv h1, #download h1, #watch h1, #faq h1, #largeImage h1{
+    font-size: 40px;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  #videoSection img{
-    width: 100%;
-  }
-}
 
