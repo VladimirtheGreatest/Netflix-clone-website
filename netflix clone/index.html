@@ -13,18 +13,21 @@
 <body>
 
   <nav class="navbar navbar-expand-lg" id=navbar>
-    <button type="button" class="btn btn-large" id=signbutton name="button">Sign in</button>
-    <div class="logo col-2"><img src="./images/logo1.png"</div>
+    <div class="row">
+    <div class="logo"></div>
+    <div class="" id=buttondiv> <button type="button" class="btn btn-large" id=signbutton name="button">Sign in</button></div>
     </div>
   </nav>
 
 
 
   <div class=" container-fluid" id=largeImage>
+    <div class="row">
     <div class="description-box col-12 text-center">
       <h1>Unlimited films, TV programmes and more.</h1>
       <h3>Watch anywhere. Cancel at any time.</h3>
-      <button type="button" class="btn btn-large button1">WATCH FREE FOR 30 DAYS > </button>
+      <button type="button" class="btn button1">WATCH FREE FOR 30 DAYS > </button>
+    </div>
     </div>
   </div>
 
@@ -33,21 +36,21 @@
     <div class="slideshow-container row">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+  <div class="mySlides fade col-12" >
     <div class="numbertext">1 / 3</div>
-    <img src="./images/img1.png">
+    <img class="img-fluid" src="./images/img1.png">
     <div class="text">Crime</div>
   </div>
 
-  <div class="mySlides fade col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+  <div class="mySlides fade col-12">
     <div class="numbertext">2 / 3</div>
-    <img src="./images/img2.png">
+    <img class="img-fluid" src="./images/img2.png">
     <div class="text">Popular on Netflix</div>
   </div>
 
-  <div class="mySlides fade col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+  <div class="mySlides fade col-12">
     <div class="numbertext">3 / 3</div>
-    <img src="./images/img3.png">
+    <img class="img-fluid" src="./images/img3.png">
     <div class="text">Kids</div>
   </div>
 
@@ -64,30 +67,31 @@
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
-    <h2 class="col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">Watch these and many more, as much as you want, whenever you want.</h2>
+
+    <h2 class="col-12">Watch these and many more, as much as you want, whenever you want.</h2>
 
   </div>
 
 <div class="container-fluid" id=tv>
-  <div class="row">
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6" id=tvbox>
+  <div class="row text-center">
+    <div class="col-12 col-sm-5 col-md-5  col-lg-6" id=tvbox>
       <h1>Enjoy on your TV.</h1>
       <h4>Watch on smart TVS, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h4>
       <button type="button" class="btn btn-large button2">WATCH FREE FOR 30 DAYS > </button>
     </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6" id=tvimage>
-      <img src="./images/tv.png" alt="">
+    <div class="col-12 col-sm-7 col-md-7  col-lg-6"  id=tvimage>
+      <img class="img-fluid" src="./images/tv.png" alt="">
     </div>
   </div>
 </div>
 
 <div class="container-fluid" id=download>
   <div class="row text-center">
-    <div class="col-12 col-sm-6 col-md-6  col-lg-6" id=tvimage1>
-      <img src="./images/mobile.png" alt="">
+    <div class="col-12 col-sm-5 col-md-7  col-lg-6" id=tvimage1>
+      <img class="img-fluid" src="./images/mobile.png" alt="">
     </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6" id=tvbox>
-      <h1>Download your programmes to watch on the go.</h1>
+    <div class="col-12 col-sm-7 col-md-5 col-lg-6" id=tvbox1>
+      <h1>Download your movies to watch on the go.</h1>
       <h4>Save your data and watch all your favourites offline.</h4>
       <button type="button" class="btn btn-large button2">WATCH FREE FOR 30 DAYS > </button>
     </div>
@@ -95,23 +99,23 @@
 </div>
 
 <div class="container-fluid" id=watch>
-  <div class="row">
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-center" id=tvbox>
+  <div class="row text-center">
+    <div class="col-12 col-sm-5 col-md-5 col-lg-6 " id=tvbox>
       <h1>Watch everywhere.</h1>
       <h4>Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.</h4>
       <button type="button" class="btn btn-large button2">WATCH FREE FOR 30 DAYS > </button>
     </div>
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6" id=tvimage2>
-      <img src="./images/device.png" alt="">
+    <div class="col-12 col-sm-7 col-md-7 col-lg-6" id=tvimage2>
+      <img class="img-fluid" src="./images/device.png" alt="">
     </div>
   </div>
 </div>
 
 <div class="container-fluid text-center" id=faq>
   <h1>Frequently asked questions</h1>
-  <div class="questions">
-
-    <dl class="faq">
+  <div class="questions row">
+  <button type="button" class="btn btn-large button1 col-12">WATCH FREE FOR 30 DAYS > </button>
+    <dl class="faq col-12">
       <dt>
         <button class="btn btn-lg btn-block" aria-expanded="false" aria-controls="faq1_desc">
         What is Netflix?
@@ -173,7 +177,6 @@
         </p>
       </dd>
     </dl>
-  <button type="button" class="btn btn-large button1">WATCH FREE FOR 30 DAYS > </button>
 </div>
 </div>
 
@@ -212,7 +215,7 @@
               <a href="#!">Ways to Watch</a>
             </li>
             <li>
-              <a href="#!">Corporate information</a>
+              <a href="#!">Corporate</a>
             </li>
             <li>
               <a href="#!">Netflix Originals</a>
@@ -342,6 +345,7 @@
 </body>
 
 </html>
+
 
 
 
