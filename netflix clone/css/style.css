@@ -62,9 +62,10 @@ body {
 #videoSection{
   border-bottom: 5px grey solid;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   border-top: 5px grey solid;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #videoSection h2{
@@ -353,8 +354,14 @@ footer{
 
 /*media queries, responsivness */
 
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  #tv, #download, #watch, #videoSection, #faq{
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -367,11 +374,12 @@ footer{
     margin-right: 20px;
   }
   #videoSection{
-    height: 140vh;
+    height: 100%;
   }
   #tv, #download, #watch{
-    height: 110vh;
+    height: 110%;
     padding-top: 100px;
+    padding-bottom: 100px;
   }
   #tvbox{
     text-align: left;
@@ -389,7 +397,7 @@ footer{
 
 @media only screen and (min-width: 1400px) {
   #faq{
-    height: 110vh;
+    height: 100%;
   }
   #tvimage2{
     background-image: url(../images/logo1.png);
@@ -403,5 +411,6 @@ footer{
     font-size: 40px;
   }
 }
+
 
 
