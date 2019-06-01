@@ -1,8 +1,8 @@
 # Netflix-clone-website
 This is a simple Netflix clone website.
 
-<p align="center">
-  <img src="https://s3-eu-west-1.amazonaws.com/grm-assets/25110/netflix.png" width="600" title="hover text">
+<p align="left">
+  <img src="https://s3-eu-west-1.amazonaws.com/grm-assets/25110/netflix.png" width="400" title="hover text">
   
 </p>
 
